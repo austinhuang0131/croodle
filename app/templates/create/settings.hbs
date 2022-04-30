@@ -39,7 +39,7 @@
     >
       <select
         id={{el.id}}
-        onchange={{action (mut el.value) value="target.value"}}
+        onchange={{action el.setValue value="target.value"}}
         class="custom-select"
       >
         {{#each this.expirationDurations as |duration|}}

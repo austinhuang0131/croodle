@@ -65,7 +65,7 @@
                   type="radio"
                   value={{possibleAnswer.type}}
                   checked={{eq possibleAnswer.type el.value}}
-                  onchange={{action (mut el.value) possibleAnswer.type}}
+                  onchange={{action el.setValue possibleAnswer.type}}
                   id={{concat el.id "_" possibleAnswer.type}}
                   name={{selection.labelValue}}
                 >
